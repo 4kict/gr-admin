@@ -1,0 +1,13 @@
+spring.boot.admin.routes.endpoints: env,metrics,dump,jolokia,info,configprops,trace,logfile,refresh,flyway,liquibase,heapdump,loggers,auditevents,hystrix.stream,activiti
+spring:
+  application:
+    name: gr-admin
+server:
+  port: 8081
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:8762/eureka}
+  instance:
+    preferIpAddress: true
+
